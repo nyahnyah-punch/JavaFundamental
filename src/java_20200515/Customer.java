@@ -9,5 +9,7 @@ public class Customer { //은행에서 고객을 관리하는
 	public String phone;
 	public double balance;
 	public boolean IsReleased;
-	public double InterestRate; //이자율은 상품 공통이니 static을 사용하는게 유리하다 
+	public static double InterestRate; //이자율이 다 똑같으면 static변수가 맞다
+	public static final String BANKNAME = "신한은행"; //힌번 세팅해주면 끝
+	
 }

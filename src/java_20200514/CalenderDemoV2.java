@@ -4,8 +4,8 @@ public class CalenderDemoV2 {
 	
 	public static void main(String[] args) {
 		int year = 2020;
-		int month = 10;
-		int day = 25;
+		int month = 5;
+		int day = 17;
 		int TotalCount = 0;
 		int rest = 0;
 		int past = year - 1;
@@ -58,7 +58,7 @@ public class CalenderDemoV2 {
 			message = "일요일";
 		}
 
-		System.out.println(year + "년" + month + "월" + day + "일은 " + message + "입니다.");
+		System.out.println(year + "년 " + month + "월 " + day + "일은 " + message + "입니다.");
 
 	}
 

@@ -6,6 +6,12 @@ public class Calander_v3 {
 	private int month;
 	private int day;
 	
+	public Calander_v3(int year, int month, int day) {
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+	
 	//year에 대한 setter메소드: year을 공개해야 할 때 
 	public void SetYear(int year) { //Setter메소드를 이용하여 year을 변경한다
 		this.year = year; ////자기 자신객체, 로컬변수와 맴버변수를 구별할 때 사용

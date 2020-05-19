@@ -3,10 +3,11 @@ package java_20200519;
 public class Calendar_v4 {
 	
 	private int[] monthArray = {31,28,31,30,31,30,31,31,30,31,30,31};
+	//각각의 월의 일수를 새주는 배열
 	//이걸로 다 사용 가능
 	
 	public static final int	SUNDAY = 0; //final변수는 공개 해봐야 바꿀수도 없음
-	public static final int	MONDAY = 1;
+	public static final int	MONDAY = 1; //월-일까지 판별 결과
 	public static final int	TUESDAY = 2;
 	public static final int	WEDNESDAY = 3;
 	public static final int	THURSDAY = 4;

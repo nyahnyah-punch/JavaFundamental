@@ -6,33 +6,26 @@ public class PrimeNumber_Source {
 	private int End;
 	private int Sum;
 	
-	//
-	public void setStart(int Start) {
+	public PrimeNumber_Source() { //디폴트 생성자
+	}
+	
+	public PrimeNumber_Source(int Start, int End) { //생성자로 쌔터 생략
+		
 		this.Start = Start;
+		this.End = End;
 	}
 	
 	public int getStart() {
 		return Start;
 	}
-	//
-	
-	public void setEnd(int End) {
-		this.End = End;
-	}
 	
 	public int getEnd() {
 		return End;
-	}
-	//
-	
-	public void setSum(int Sum) {
-		this.Sum = Sum;
 	}
 	
 	public int getSum() {
 		return Sum;
 	}
-	//
 
 	public int PrimeNumber() {
 		boolean PrimeYes = true;

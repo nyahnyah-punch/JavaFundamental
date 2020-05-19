@@ -2,19 +2,19 @@ package java_20200519;
 
 public class Calendar_v4 {
 	
-	private int[] monthArray = {31,28,31,30,31,30,31,31,30,31,30,31};
+	private int[] monthArray = {31,28,31,30,31,30,31,31,30,31,30,31}; //배열
 	//각각의 월의 일수를 새주는 배열
 	//이걸로 다 사용 가능
 	
 	public static final int	SUNDAY = 0; //final변수는 공개 해봐야 바꿀수도 없음
 	public static final int	MONDAY = 1; //월-일까지 판별 결과
-	public static final int	TUESDAY = 2;
-	public static final int	WEDNESDAY = 3;
-	public static final int	THURSDAY = 4;
-	public static final int	FRIDAY = 5;
-	public static final int	SATURDAY = 6;
+	public static final int	TUESDAY = 2; //맴버변수
+	public static final int	WEDNESDAY = 3; //맴버변수
+	public static final int	THURSDAY = 4; //맴버변수
+	public static final int	FRIDAY = 5; //맴버변수
+	public static final int	SATURDAY = 6; //맴버변수
 	
-	private int getCount(int year, int month, int day) {
+	private int getCount(int year, int month, int day) { //변환값
 		int totalCount = 0;
 		
 		int preYear = year-1;
@@ -35,7 +35,7 @@ public class Calendar_v4 {
 		
 		totalCount += day;
 		
-		return totalCount;
+		return totalCount; //변환값-리턴
 	}
 
 	private boolean isLeafYear(int year) {

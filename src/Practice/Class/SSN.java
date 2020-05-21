@@ -105,7 +105,5 @@ public class SSN {
 		
 		return rest;
 	}
-	
-
 
 }

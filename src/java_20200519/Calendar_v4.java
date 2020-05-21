@@ -1,5 +1,8 @@
 package java_20200519;
-
+/**
+  Calendar는 짱입니다. 
+ */ 
+//이건 문서를 만들 때 커맨트를 달아줄 수 있는아이
 public class Calendar_v4 {
 	
 	private int[] monthArray = {31,28,31,30,31,30,31,31,30,31,30,31}; //배열
@@ -53,6 +56,9 @@ public class Calendar_v4 {
 		return monthArray[month-1];
 	}
 	
+	/**
+	  요일 출력하는 메서드 
+	 */ 
 	public void print(int year, int month, int day) {
 		int totalCount = getCount(year, month, day);
 		int dayOfWeek = totalCount % 7;
@@ -78,6 +84,9 @@ public class Calendar_v4 {
 		message+" 입니다.");
 	}
 	
+	/**
+	  월을 출력하는 메서드 
+	 */
 	public void print(int year, int month) {
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		
@@ -100,6 +109,9 @@ public class Calendar_v4 {
 		System.out.println();
 	}
 	
+	/**
+	  년을 출력하는 메서드 
+	 */
 	public void print(int year) {
 		for(int i=1;i<=12;i++) {
 			print(year, i);

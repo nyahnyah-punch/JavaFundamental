@@ -19,7 +19,8 @@ private ArrayList<Member> list = new ArrayList<Member>(); //list선언,생성
 	}
 	
 	public String input(String msg) { //msg를 인풋
-		System.out.print(msg); //msg를 반환
+		System.out.print(msg); //msg를 반환1
+		
 		Scanner sc = new Scanner(System.in); //사용자가 value를 input할 수 있게해주는 친구
 		return sc.next();//키보드에서 입력한 데이터를 반환해준다.
 	}
@@ -76,22 +77,34 @@ private ArrayList<Member> list = new ArrayList<Member>(); //list선언,생성
 	public void update() {
 		
 		String edit = input("아이디를 입력하세요>");
+		System.out.println("update id : "+edit);
+		boolean isCheck = false;
 		
 		for(Member mem : list) {
 			
 			if(mem.getId().equals(edit)) {
-				String newId = input("새로운 아이디를 입력하세요>");
-				String newName = input("새로운 이름을 입력하세요>");
-				
-				mem.setName(newId);
-				mem.setId(newName);
-				System.out.printf("아이디 : %s , 이름 : %s %n", mem.getId(), mem.getName());
-				
-			}else {
-				System.out.println("아이디를 찾을 수 없습니다 :(");
-			}	
+				isCheck = true;
+				break;
+			}
 		}
 		
+		if(isCheck) {
+			String newId = input("새로운 아이디를 입력하세요>");
+			String newName = input("새로운 이름을 입력하세요>");
+			
+			for(Member mem : list) {
+				
+				if(mem.getId().equals(edit)) {
+					mem.setName(newName);
+					mem.setId(newId);
+					System.out.printf("아이디 : %s , 이름 : %s %n", mem.getId(), mem.getName());
+					break;
+				}
+			}
+			
+		}else {
+			System.out.println("아이디를 찾을 수 없습니다.");
+		}
 		print();
 		String inputData = input("번호를 선택하세요>"); 
 		run(inputData);

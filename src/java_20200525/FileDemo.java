@@ -10,7 +10,7 @@ public class FileDemo {
 	public static void main(String[] args) {
 		
 //		새로운 디랙토리 (폴더) 생성해보기
-		File f1 = new File("C:\\dev\\2020\\05\\25"); 
+		File f1 = new File("C:\\dev\\2020\\05\\25");  
 		//c폴더 안에 dev폴더 안에 2020폴더안에 05폴더 안에 25폴더 만들기
 		
 		//디랙토리 생성하면 참, 이미 디랙토리가 있르면 거짓

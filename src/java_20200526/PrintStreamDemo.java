@@ -19,7 +19,7 @@ public class PrintStreamDemo {
 		BufferedInputStream bis = null;
 		FileOutputStream fos = null;
 		BufferedOutputStream bos = null;
-		PrintStream ps = null;
+		PrintStream ps = null; 
 		
 		try {
 			fis = new FileInputStream("c:\\dev\\Git-2.26.2-64-bit.exe");

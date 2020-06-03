@@ -36,7 +36,7 @@ public class JdbcUpdateDemo {
 			sql.append("WHERE num = ? "); 
 			//string buffer문자열로 바꿔주기
 			pstmt = con.prepareStatement(sql.toString());
-			
+			 
 //		4. 바인딩변수처리 	
 			int index = 0; //변수를 만들어줘서 번거롭게 번호를 넣고 바꿔줄 필요 없다
 			pstmt.setString(++index, "안녕안녕!"); //증가 한다음 대입하는거니까 1에서 시작
